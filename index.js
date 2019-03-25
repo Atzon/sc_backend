@@ -12,7 +12,7 @@ const express = require('express');
 const app = express();
 
 
-mongoose.connect('mongodb://localhost/sc')
+mongoose.connect('mongodb://localhost/sc', { useNewUrlParser: true, useCreateIndex: true })
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...'));
 
