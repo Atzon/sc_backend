@@ -31,8 +31,11 @@ function validateTopic(topic) {
         // post: Joi.objectId()
     };
 
-    return Joi.validate(topic, schema);
+    // return Joi.validate(topic, schema);
+    return true;
 }
+
 
 exports.topicSchema = topicSchema;
 exports.Topic = Topic;
+exports.validate = validateTopic;

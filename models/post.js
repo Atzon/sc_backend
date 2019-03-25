@@ -39,9 +39,10 @@ function validateForum(post) {
         // createDate: Joi.date().
         // updateDate: Joi.date(),
     };
-
-    return Joi.validate(post, schema);
+    return true;
+    // return Joi.validate(post, schema);
 }
 
 exports.postSchema = postSchema;
 exports.Post = Post;
+exports.validate = validateForum;

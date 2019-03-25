@@ -22,3 +22,4 @@ function validateForum(forum) {
 
 exports.forumSchema = forumSchema;
 exports.Forum = Forum;
+exports.validate = validateForum
