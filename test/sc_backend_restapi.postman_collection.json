@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "43999eb3-ba1c-470a-8a5d-1671db0c22d9",
+		"name": "sc_backend_restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "forum",
+			"item": [
+				{
+					"name": "getForumById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forum/5c995279bc5f57290b51c514",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forum",
+								"5c995279bc5f57290b51c514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postForum",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Forum 2\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putForumById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Edited forum 1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forum/5c995279bc5f57290b51c514",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forum",
+								"5c995279bc5f57290b51c514"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getForums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteForumById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forum/5c995279bc5f57290b51c514",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forum",
+								"5c995279bc5f57290b51c514"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "forumroles",
+			"item": [
+				{
+					"name": "getForumroles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forumroles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forumroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getForumrolesById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forumroles/5c99572eea2cee2db2b6f426",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forumroles",
+								"5c99572eea2cee2db2b6f426"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postForumroles",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"author\": \"5c97eb3fbcf0f220e247957a\",\n\t\"forum\": \"5c995292bc5f57290b51c515\",\n\t\"roles\": \"USER\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forumroles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forumroles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putForumrolesById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"author\": \"5c97eb3fbcf0f220e247957a\",\n\t\"forum\": \"5c995292bc5f57290b51c515\",\n\t\"roles\": \"ADMIN\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forumroles/5c99572eea2cee2db2b6f426",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forumroles",
+								"5c99572eea2cee2db2b6f426"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteForumrolesById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/forumroles/5c99572eea2cee2db2b6f426",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forumroles",
+								"5c99572eea2cee2db2b6f426"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "postUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Kamil S\",\n\t\"email\": \"kamil2@kamil.pl\",\n\t\"password\": \"haselko123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "topic",
+			"item": [
+				{
+					"name": "getTopics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/topic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTopicById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/topic/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"topic",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postTopic",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Topic 1\",\n\t\"author\": \"5c97eb3fbcf0f220e247957a\",\n\t\"post\": \"5c995c911212a734b4cdc95e\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/topic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"topic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putTopicById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Topic 1 edited\",\n\t\"author\": \"5c97eb3fbcf0f220e247957a\",\n\t\"post\": \"5c995c911212a734b4cdc95e\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/topic/5c99600c1b4081380fc28eec",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"topic",
+								"5c99600c1b4081380fc28eec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTopicById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/topic/5c99600c1b4081380fc28eec",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"topic",
+								"5c99600c1b4081380fc28eec"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "getPosts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPostById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/post/5c995bf61212a734b4cdc95d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"post",
+								"5c995bf61212a734b4cdc95d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postPost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"content\": \"tresc 1 posta\",\n\t\"author\": \"5c97eb3fbcf0f220e247957a\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putPostById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"content\": \"tresc 1 posta po edicie\",\n\t\"author\": \"5c97eb3fbcf0f220e247957a\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/post/5c995bf61212a734b4cdc95d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"post",
+								"5c995bf61212a734b4cdc95d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTopicById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/post/5c995bf61212a734b4cdc95d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"post",
+								"5c995bf61212a734b4cdc95d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subforum",
+			"item": [
+				{
+					"name": "getSubforums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/subforum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"subforum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSubforumById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/subforum/5c995e396744f336032a870f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"subforum",
+								"5c995e396744f336032a870f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postSubforum",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Subforum 1\",\n\t\"topics\": []\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/subforum",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"subforum"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putSubforumById",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Subforum 1 edited\",\n\t\"topics\": []\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/subforum/5c995e396744f336032a870f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"subforum",
+								"5c995e396744f336032a870f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTopicById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/subforum/5c995e396744f336032a870f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"subforum",
+								"5c995e396744f336032a870f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
