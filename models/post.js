@@ -1,4 +1,5 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
@@ -10,7 +11,8 @@ const postSchema = new mongoose.Schema({
     },
     author: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
+        required: true
     },
     createDate: {
         type: Date,
@@ -35,12 +37,13 @@ const Post = mongoose.model('Post', postSchema);
 function validateForum(post) {
     const schema = {
         content: Joi.string().min(1).max(2000).required(),
-        // author: Joi.objectId(),
-        // createDate: Joi.date().
-        // updateDate: Joi.date(),
+        author: Joi.objectId().required(),
+        createDate: Joi.date(),
+        updateDate: Joi.date(),
+        isEdited: Joi.boolean(),
+        isRemoved: Joi.boolean()
     };
-    return true;
-    // return Joi.validate(post, schema);
+    return Joi.validate(post, schema);
 }
 
 exports.postSchema = postSchema;

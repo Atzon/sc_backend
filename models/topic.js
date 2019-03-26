@@ -26,13 +26,11 @@ const Topic = mongoose.model('Topic', topicSchema);
 
 function validateTopic(topic) {
     const schema = {
-        name: Joi.string().min(3).required(),
-        // author: Joi.objectId(),
-        // post: Joi.objectId()
+        name: Joi.string().min(5).max(50).required(),
+        author: Joi.objectId().required(),
+        post: Joi.objectId().required()
     };
-
-    // return Joi.validate(topic, schema);
-    return true;
+    return Joi.validate(topic, schema);
 }
 
 

@@ -1,4 +1,5 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
 
 const forumrolesSchema = new mongoose.Schema({
@@ -14,7 +15,8 @@ const forumrolesSchema = new mongoose.Schema({
     },
     roles: {
         type: String,
-        enum: ['USER', 'ADMIN', 'MOD']
+        enum: ['USER', 'ADMIN', 'MOD'],
+        required: true
     }
 });
 
@@ -22,12 +24,11 @@ const Forumroles = mongoose.model('Forumroles', forumrolesSchema);
 
 function validateForumroles(forumroles) {
     const schema = {
-        // name: Joi.string().min(3).required()
-        roles: Joi.string().valid('USER', 'ADMIN', 'MOD')
+        author: Joi.objectId().required(),
+        forum: Joi.objectId().required(),
+        roles: Joi.string().valid('USER', 'ADMIN', 'MOD').required()
     };
-
-    // return Joi.validate(forumroles, schema);
-    return true;
+    return Joi.validate(forumroles, schema);
 }
 
 

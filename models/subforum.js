@@ -1,4 +1,7 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
+
+
 const mongoose = require('mongoose');
 
 const subforumSchema = new mongoose.Schema({
@@ -15,12 +18,10 @@ const Subforum = mongoose.model('Subforum', subforumSchema);
 
 function validateSubforum(subforum) {
     const schema = {
-        name: Joi.string().min(3).required(),
-        // topics: Joi.array().item(Joi.objectId());
+        name: Joi.string().min(5).max(50).required(),
+        topics: Joi.array().items(Joi.objectId())
     };
-
-    // return Joi.validate(subforum, schema);
-    return true;
+    return Joi.validate(subforum, schema);
 }
 
 
