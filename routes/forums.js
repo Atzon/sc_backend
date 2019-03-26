@@ -1,11 +1,11 @@
-// const auth = require('../middleware/auth');
+const authentication = require('../middleware/authentication');
 // const admin = require('../middleware/admin');
 const {Forum, validate} = require('../models/forum');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.get('/', authentication, async (req, res) => {
     const forum = await Forum.find().sort('name');
     res.send(forum);
 });
